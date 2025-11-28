@@ -1,0 +1,23 @@
+<svg width="1200" height="800" viewBox="0 0 1200 800" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="map-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#063d65" />
+      <stop offset="100%" stop-color="#0a6c8f" />
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="50%" r="70%">
+      <stop offset="0%" stop-color="#5dd0ff" stop-opacity="0.6" />
+      <stop offset="100%" stop-color="#0a6c8f" stop-opacity="0" />
+    </radialGradient>
+  </defs>
+  <rect width="1200" height="800" fill="#021c34" />
+  <circle cx="600" cy="400" r="320" fill="url(#glow)" />
+  <path d="M280 340 L320 360 L340 330 L360 360 L390 330 L420 360 L450 340" stroke="#7fe3ff" stroke-width="6" fill="none" opacity="0.6" />
+  <path d="M500 380 L540 400 L600 360 L660 400 L700 380" stroke="#7fe3ff" stroke-width="8" fill="none" opacity="0.6" />
+  <path d="M780 420 L820 440 L860 410 L900 430" stroke="#7fe3ff" stroke-width="6" fill="none" opacity="0.6" />
+  <circle cx="300" cy="340" r="12" fill="#5dd0ff" />
+  <circle cx="600" cy="360" r="14" fill="#5dd0ff" />
+  <circle cx="900" cy="430" r="12" fill="#5dd0ff" />
+  <circle cx="700" cy="500" r="8" fill="#5dd0ff" opacity="0.7" />
+  <circle cx="450" cy="520" r="10" fill="#5dd0ff" opacity="0.7" />
+  <circle cx="350" cy="420" r="8" fill="#5dd0ff" opacity="0.7" />
+</svg>

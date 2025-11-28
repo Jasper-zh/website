@@ -1,0 +1,24 @@
+<svg width="1200" height="800" viewBox="0 0 1200 800" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="floor" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#dfe7ef" />
+      <stop offset="100%" stop-color="#c5d4e6" />
+    </linearGradient>
+    <linearGradient id="wall" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#f5f8fd" />
+      <stop offset="100%" stop-color="#e0e6f0" />
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="800" fill="url(#wall)" />
+  <polygon points="0,500 1200,500 1100,800 100,800" fill="url(#floor)" />
+  <rect x="100" y="200" width="1000" height="250" fill="#ffffff" stroke="#c7d4e4" stroke-width="6" rx="20" />
+  <rect x="160" y="240" width="250" height="170" fill="#e9eff7" />
+  <rect x="470" y="240" width="250" height="170" fill="#e9eff7" />
+  <rect x="780" y="240" width="250" height="170" fill="#e9eff7" />
+  <rect x="320" y="420" width="560" height="120" fill="#cfd8e3" opacity="0.5" />
+  <rect x="360" y="450" width="480" height="80" fill="#ffffff" opacity="0.8" />
+  <rect x="520" y="410" width="160" height="200" fill="#d9e3f1" />
+  <circle cx="400" cy="120" r="30" fill="#bcc9da" />
+  <circle cx="600" cy="120" r="30" fill="#bcc9da" />
+  <circle cx="800" cy="120" r="30" fill="#bcc9da" />
+</svg>

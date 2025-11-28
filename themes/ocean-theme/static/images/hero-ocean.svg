@@ -1,0 +1,21 @@
+<svg width="1600" height="900" viewBox="0 0 1600 900" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#031b39" />
+      <stop offset="50%" stop-color="#0b375f" />
+      <stop offset="100%" stop-color="#0f5e7e" />
+    </linearGradient>
+    <linearGradient id="wave" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#3ec5ff" stop-opacity="0.8" />
+      <stop offset="100%" stop-color="#0f8ec7" stop-opacity="0.4" />
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="900" fill="url(#grad)" />
+  <path d="M0 550 C200 600 400 500 600 550 C800 600 1000 520 1200 560 C1400 600 1600 540 1600 540 L1600 900 L0 900 Z" fill="url(#wave)" opacity="0.8" />
+  <path d="M0 600 C250 650 450 580 650 620 C850 660 1050 580 1250 630 C1450 680 1600 640 1600 640 L1600 900 L0 900 Z" fill="#1c78c0" opacity="0.4" />
+  <circle cx="200" cy="200" r="3" fill="#fff" opacity="0.4" />
+  <circle cx="400" cy="120" r="2" fill="#fff" opacity="0.6" />
+  <circle cx="800" cy="180" r="4" fill="#fff" opacity="0.5" />
+  <circle cx="1200" cy="140" r="3" fill="#fff" opacity="0.3" />
+  <circle cx="1400" cy="260" r="2" fill="#fff" opacity="0.5" />
+</svg>

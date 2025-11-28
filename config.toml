@@ -1,0 +1,41 @@
+baseURL = 'https://oceanvillagefood.com/'
+languageCode = 'en-us'
+title = 'Shandong Ocean Village Food Co., Ltd.'
+theme = 'ocean-theme'
+
+[params]
+  companyName = "Shandong Ocean Village Food Co., Ltd."
+  companyNameCN = "海洋村"
+  tagline = "Premium Marine Food Products"
+  email = "salemanager@oceanvillagefood.com"
+  phone = "0086 631 7337809"
+  fax = "+86 631 7337809"
+  address = "No.982, South Dongshan Road, Dongshan District, RongCheng, Shandong, China"
+
+[menu]
+  [[menu.main]]
+    identifier = "home"
+    name = "HOME"
+    url = "/"
+    weight = 1
+  [[menu.main]]
+    identifier = "about"
+    name = "ABOUT US"
+    url = "/about/"
+    weight = 2
+  [[menu.main]]
+    identifier = "products"
+    name = "PRODUCTS"
+    url = "/products/"
+    weight = 3
+  [[menu.main]]
+    identifier = "quality"
+    name = "QUALITY CONTROL"
+    url = "/quality-control/"
+    weight = 4
+  [[menu.main]]
+    identifier = "contact"
+    name = "CONTACT"
+    url = "/contact/"
+    weight = 5
+

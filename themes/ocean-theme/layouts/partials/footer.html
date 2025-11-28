@@ -1,0 +1,24 @@
+<footer class="site-footer">
+    <div class="container">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>{{ .Site.Params.companyName }}</h3>
+                <p>{{ .Site.Params.companyNameCN }}</p>
+            </div>
+            <div class="footer-section">
+                <h4>Contact Information</h4>
+                <p><strong>Office:</strong> {{ .Site.Params.phone }}</p>
+                <p><strong>Fax:</strong> {{ .Site.Params.fax }}</p>
+                <p><strong>Email:</strong> <a href="mailto:{{ .Site.Params.email }}">{{ .Site.Params.email }}</a></p>
+            </div>
+            <div class="footer-section">
+                <h4>Address</h4>
+                <p>{{ .Site.Params.address }}</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; {{ now.Year }} {{ .Site.Params.companyName }}. All rights reserved.</p>
+        </div>
+    </div>
+</footer>
+

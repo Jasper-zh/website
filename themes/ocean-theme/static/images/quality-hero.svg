@@ -1,0 +1,24 @@
+<svg width="1600" height="600" viewBox="0 0 1600 600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="hero-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#eef2f7" />
+      <stop offset="100%" stop-color="#d9e2ef" />
+    </linearGradient>
+    <linearGradient id="hero-overlay" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.9" />
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0.4" />
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="600" fill="url(#hero-bg)" />
+  <rect x="150" y="120" width="1300" height="360" rx="40" fill="url(#hero-overlay)" stroke="#cfd7e5" stroke-width="8" />
+  <rect x="220" y="180" width="1160" height="240" rx="30" fill="#f9fbff" />
+  <rect x="260" y="200" width="260" height="200" rx="20" fill="#e3ebf7" />
+  <rect x="560" y="200" width="260" height="200" rx="20" fill="#e3ebf7" />
+  <rect x="860" y="200" width="260" height="200" rx="20" fill="#e3ebf7" />
+  <rect x="1160" y="200" width="220" height="200" rx="20" fill="#e3ebf7" />
+  <rect x="500" y="340" width="600" height="60" rx="30" fill="#d0e3f6" />
+  <rect x="540" y="360" width="520" height="20" rx="10" fill="#ffffff" />
+  <circle cx="350" cy="160" r="25" fill="#b0c4db" />
+  <circle cx="800" cy="160" r="25" fill="#b0c4db" />
+  <circle cx="1250" cy="160" r="25" fill="#b0c4db" />
+</svg>

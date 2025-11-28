@@ -1,0 +1,64 @@
+{{ define "main" }}
+<section class="hero">
+    <div class="hero-background">
+        <div class="bubbles"></div>
+    </div>
+    <div class="hero-content">
+        <h1 class="hero-title">
+            <span class="hero-word">OCEAN</span>
+            <span class="hero-word">VILLAGE</span>
+            <span class="hero-word">FOOD</span>
+        </h1>
+        <p class="hero-tagline">{{ .Site.Params.tagline }}</p>
+        <div class="hero-cta">
+            <a href="/products/" class="btn btn-primary">View Products</a>
+            <a href="/contact/" class="btn btn-secondary">Contact Us</a>
+        </div>
+    </div>
+</section>
+
+<section class="features">
+    <div class="container">
+        <div class="features-grid">
+            <div class="feature-card">
+                <div class="feature-icon">🌊</div>
+                <h3>Premium Quality</h3>
+                <p>Strictly controlled production process ensuring the highest quality standards</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">🏭</div>
+                <h3>Modern Facilities</h3>
+                <p>State-of-the-art production facilities with advanced equipment</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">🌍</div>
+                <h3>Global Reach</h3>
+                <p>Exporting to over 20 countries and regions worldwide</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">🔬</div>
+                <h3>Quality Assurance</h3>
+                <p>Well-equipped laboratory ensuring food safety and hygiene</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="about-preview">
+    <div class="container">
+        <div class="about-preview-content">
+            <div class="about-preview-text">
+                <h2>About Ocean Village</h2>
+                <p>Shandong Ocean Village Food Co., Ltd was established in September 2016, with a registered capital of RMB50 million. Located adjacent to the largest fishing port in northern China - SHIDAO port, we are strategically positioned for excellence in marine food processing.</p>
+                <a href="/about/" class="btn btn-outline">Learn More</a>
+            </div>
+            <div class="about-preview-image">
+                <div class="image-placeholder" style="background-image: url('/images/factory-hall.svg');">
+                    <span>Factory Image</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{{ end }}
+

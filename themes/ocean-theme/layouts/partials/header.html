@@ -1,0 +1,18 @@
+<header class="site-header">
+    <div class="container">
+        <nav class="navbar">
+            <div class="nav-links">
+                {{ range .Site.Menus.main }}
+                <a href="{{ .URL }}" class="nav-link {{ if eq $.RelPermalink .URL }}active{{ end }}">
+                    {{ .Name }}
+                </a>
+                {{ end }}
+            </div>
+            <div class="logo">
+                <span class="logo-text">Ocean Village</span>
+                <span class="logo-cn">{{ .Site.Params.companyNameCN }}</span>
+            </div>
+        </nav>
+    </div>
+</header>
+
