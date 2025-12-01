@@ -1,53 +1,109 @@
 {{ define "main" }}
+{{ $products := .Site.Data.products }}
 <div class="page-container products-page">
     <div class="page-header">
         <div class="product-tabs">
-            <a href="#frozen-squid" class="product-tab active">Frozen Squid</a>
-            <a href="#dried-seafood" class="product-tab">Dried Seafood</a>
+            {{ range $index, $category := $products.categories }}
+            <a href="#{{ $category.id }}" class="product-tab {{ if eq $index 0 }}active{{ end }}" data-category="{{ $category.id }}">{{ $category.name }}</a>
+            {{ end }}
         </div>
     </div>
     
     <div class="container">
+        {{ if $products.intro }}
         <div class="products-intro">
-            <p>Here is showing our frozen squid products, you may find what you need here.</p>
+            <p>{{ $products.intro }}</p>
         </div>
+        {{ end }}
         
-        <div class="products-grid">
-            <div class="product-card">
-                <div class="product-image">
-                    <img src="{{ "images/product-squid.svg" | relURL }}" alt="Squid Tube product photo">
-                </div>
-                <div class="product-details">
-                    <h3>Squid Tube</h3>
-                    <div class="product-specs">
-                        <p><strong>Raw material:</strong> Todarodes Pacificus / Illex Argentina / Dosidicus Gigas</p>
-                        <p><strong>Size:</strong> U5, U7 OR as customized</p>
-                        <p><strong>MINI Order:</strong> 20 FCL</p>
-                        <p><strong>Package:</strong> IQF/BLOCK/INTERLEAVED</p>
-                        <p><strong>Payment:</strong> T/T OR OTHERS CLIENT REQUEST</p>
-                        <p><strong>Provided By:</strong> SHANDONG OCEAN VILLAGE FOOD COMPANY</p>
+        {{ range $index, $category := $products.categories }}
+        <div id="{{ $category.id }}" class="products-category" {{ if ne $index 0 }}style="display: none;"{{ end }}>
+            <div class="products-grid">
+                {{ range $category.products }}
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="{{ .image | relURL }}" alt="{{ .alt }}">
+                    </div>
+                    <div class="product-details">
+                        <h3>{{ .name }}</h3>
+                        <div class="product-specs">
+                            {{ if .specs.rawMaterial }}
+                            <p><strong>Raw material:</strong> {{ .specs.rawMaterial }}</p>
+                            {{ end }}
+                            {{ if .specs.size }}
+                            <p><strong>Size:</strong> {{ .specs.size }}</p>
+                            {{ end }}
+                            {{ if .specs.minOrder }}
+                            <p><strong>MINI Order:</strong> {{ .specs.minOrder }}</p>
+                            {{ end }}
+                            {{ if .specs.package }}
+                            <p><strong>Package:</strong> {{ .specs.package }}</p>
+                            {{ end }}
+                            {{ if .specs.payment }}
+                            <p><strong>Payment:</strong> {{ .specs.payment }}</p>
+                            {{ end }}
+                            {{ if .specs.providedBy }}
+                            <p><strong>Provided By:</strong> {{ .specs.providedBy }}</p>
+                            {{ end }}
+                        </div>
                     </div>
                 </div>
-            </div>
-            
-            <div class="product-card">
-                <div class="product-image">
-                    <img src="{{ "images/product-ring.svg" | relURL }}" alt="Squid ring product photo">
-                </div>
-                <div class="product-details">
-                    <h3>Squid Ring</h3>
-                    <div class="product-specs">
-                        <p><strong>Raw material:</strong> Todarodes Pacificus / Illex Argentina / Dosidicus Gigas</p>
-                        <p><strong>Size:</strong> DIAMETER 3-7CM</p>
-                        <p><strong>MINI Order:</strong> 20 FCL</p>
-                        <p><strong>Package:</strong> IQF/BLOCK</p>
-                        <p><strong>Payment:</strong> T/T OR OTHERS CLIENT REQUEST</p>
-                        <p><strong>Provided By:</strong> SHANDONG OCEAN VILLAGE FOOD COMPANY</p>
-                    </div>
-                </div>
+                {{ end }}
             </div>
         </div>
+        {{ end }}
     </div>
 </div>
+
+<script>
+(function() {
+    function initProductTabs() {
+        const productTabs = document.querySelectorAll('.product-tab');
+        const productCategories = document.querySelectorAll('.products-category');
+        
+        if (productTabs.length === 0 || productCategories.length === 0) {
+            return;
+        }
+        
+        productTabs.forEach(function(tab) {
+            tab.addEventListener('click', function(e) {
+                e.preventDefault();
+                e.stopPropagation();
+                
+                // Remove active class from all tabs
+                productTabs.forEach(function(t) {
+                    t.classList.remove('active');
+                });
+                
+                // Add active class to clicked tab
+                this.classList.add('active');
+                
+                // Hide all product categories
+                productCategories.forEach(function(cat) {
+                    cat.style.display = 'none';
+                });
+                
+                // Show selected category
+                const categoryId = this.getAttribute('data-category');
+                const href = this.getAttribute('href');
+                const targetId = categoryId || (href ? href.replace(/^#/, '') : '');
+                
+                if (targetId) {
+                    const targetCategory = document.getElementById(targetId);
+                    if (targetCategory) {
+                        targetCategory.style.display = 'block';
+                    }
+                }
+            });
+        });
+    }
+    
+    if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', initProductTabs);
+    } else {
+        initProductTabs();
+    }
+})();
+</script>
 {{ end }}
 
