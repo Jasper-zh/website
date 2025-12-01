@@ -1,4 +1,4 @@
-baseURL = 'https://jasper-zh.github.io/website/'
+baseURL = '/'
 languageCode = 'en-us'
 title = 'Shandong Ocean Village Food Co., Ltd.'
 theme = 'ocean-theme'

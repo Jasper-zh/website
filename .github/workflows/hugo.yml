@@ -1,9 +1,18 @@
 name: Deploy Hugo site to Pages
 
+# 配置部署路径：根目录使用 '/'，子目录使用 '/your-path/'（如 '/website/'）
+env:
+  BASE_URL: '/website/'
+
 on:
   push:
     branches: ["main"]
   workflow_dispatch:
+    inputs:
+      baseURL:
+        description: 'Base URL for deployment (e.g., /website/ or /)'
+        required: false
+        default: '/'
 
 permissions:
   contents: read
@@ -28,7 +37,7 @@ jobs:
           extended: true
 
       - name: Build
-        run: hugo --minify
+        run: hugo --minify --baseURL "${{ github.event.inputs.baseURL || env.BASE_URL }}"
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
