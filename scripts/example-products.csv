@@ -1,0 +1,17 @@
+分类,产品名称,图片,原材料,尺寸,最小订单,包装,付款方式,供应商
+虾类,大虾,https://jyunpan.oss-cn-beijing.aliyuncs.com/%E8%99%BE.png,野生大虾,16-20只/公斤,20 FCL,IQF/BLOCK,T/T,MARINE FOOD PRODUCTS CO., LTD.
+虾类,基围虾,https://example.com/images/jwixia.jpg,养殖基围虾,30-40只/公斤,20 FCL,IQF/BLOCK,T/T,MARINE FOOD PRODUCTS CO., LTD.
+虾类,小龙虾,https://example.com/images/xiaolongxia.jpg,淡水小龙虾,20-30只/公斤,20 FCL,IQF/BLOCK,T/T,MARINE FOOD PRODUCTS CO., LTD.
+鱿鱼类,鱿鱼圈,https://example.com/images/youyuquan.jpg,Todarodes Pacificus,直径3-7CM,20 FCL,IQF/BLOCK,T/T,MARINE FOOD PRODUCTS CO., LTD.
+鱿鱼类,鱿鱼筒,https://example.com/images/youyutong.jpg,Illex Argentina,U5/U7,20 FCL,IQF/BLOCK/INTERLEAVED,T/T,MARINE FOOD PRODUCTS CO., LTD.
+鱿鱼类,鱿鱼须,https://example.com/images/youyuxu.jpg,Dosidicus Gigas,5-10CM,20 FCL,IQF/BLOCK,T/T,MARINE FOOD PRODUCTS CO., LTD.
+鱼类,带鱼,https://example.com/images/daiyu.jpg,野生带鱼,200-300g/条,20 FCL,IQF/BLOCK,T/T,MARINE FOOD PRODUCTS CO., LTD.
+鱼类,黄花鱼,https://example.com/images/huanghuayu.jpg,野生黄花鱼,300-500g/条,20 FCL,IQF/BLOCK,T/T,MARINE FOOD PRODUCTS CO., LTD.
+鱼类,三文鱼,https://example.com/images/sanwenyu.jpg,挪威三文鱼,3-5kg/条,20 FCL,IQF/BLOCK,T/T,MARINE FOOD PRODUCTS CO., LTD.
+贝类,扇贝,https://example.com/images/shanbei.jpg,野生扇贝,5-7CM,20 FCL,IQF/BLOCK,T/T,MARINE FOOD PRODUCTS CO., LTD.
+贝类,生蚝,https://example.com/images/shenghao.jpg,养殖生蚝,8-10CM,20 FCL,IQF/BLOCK,T/T,MARINE FOOD PRODUCTS CO., LTD.
+贝类,蛤蜊,https://example.com/images/geli.jpg,野生蛤蜊,3-5CM,20 FCL,IQF/BLOCK,T/T,MARINE FOOD PRODUCTS CO., LTD.
+干海鲜,干鱿鱼,https://example.com/images/ganyouyu.jpg,Dosidicus Gigas,整只,1000kg,真空包装,T/T,MARINE FOOD PRODUCTS CO., LTD.
+干海鲜,干虾米,https://example.com/images/ganxiami.jpg,野生小虾,小号,1000kg,真空包装,T/T,MARINE FOOD PRODUCTS CO., LTD.
+干海鲜,干贝,https://example.com/images/ganbei.jpg,野生扇贝,中号,1000kg,真空包装,T/T,MARINE FOOD PRODUCTS CO., LTD.
+

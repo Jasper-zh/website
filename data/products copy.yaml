@@ -1,0 +1,39 @@
+intro: "Here is showing our frozen squid products, you may find what you need here."
+categories:
+  - name: "Frozen Squid"
+    id: "frozen-squid"
+    products:
+      - name: "Squid Tube"
+        image: "images/product-squid.svg"
+        alt: "Squid Tube product photo"
+        specs:
+          rawMaterial: "Todarodes Pacificus / Illex Argentina / Dosidicus Gigas"
+          size: "U5, U7 OR as customized"
+          minOrder: "20 FCL"
+          package: "IQF/BLOCK/INTERLEAVED"
+          payment: "T/T OR OTHERS CLIENT REQUEST"
+          providedBy: "SHANDONG OCEAN VILLAGE FOOD COMPANY"
+      - name: "Squid Ring"
+        image: "images/product-ring.svg"
+        alt: "Squid ring product photo"
+        specs:
+          rawMaterial: "Todarodes Pacificus / Illex Argentina / Dosidicus Gigas"
+          size: "DIAMETER 3-7CM"
+          minOrder: "20 FCL"
+          package: "IQF/BLOCK"
+          payment: "T/T OR OTHERS CLIENT REQUEST"
+          providedBy: "SHANDONG OCEAN VILLAGE FOOD COMPANY"
+  - name: "Dried Seafood"
+    id: "dried-seafood"
+    products:
+      - name: "Squid Ring"
+        image: "images/product-ring.svg"
+        alt: "Squid ring product photo"
+        specs:
+          rawMaterial: "Todarodes Pacificus / Illex Argentina / Dosidicus Gigas"
+          size: "DIAMETER 3-7CM"
+          minOrder: "20 FCL"
+          package: "IQF/BLOCK"
+          payment: "T/T OR OTHERS CLIENT REQUEST"
+          providedBy: "SHANDONG OCEAN VILLAGE FOOD COMPANY"
+

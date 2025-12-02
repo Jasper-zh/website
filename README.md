@@ -1,4 +1,4 @@
-# Ocean Village Food - Hugo Website
+# Marine Food Products - Hugo Website
 
 现代化的海鲜食品公司官方网站，使用 Hugo 静态网站生成器构建。
 
@@ -137,11 +137,11 @@ git push -f git@github.com:username/username.github.io.git main
 
 ## 许可证
 
-本项目为 Shandong Ocean Village Food Co., Ltd. 所有。
+本项目为 Marine Food Products Co., Ltd. 所有。
 
 ## 联系方式
 
 如有问题或建议，请联系：
-- Email: salemanager@oceanvillagefood.com
-- Phone: 0086 631 7337809
+- Email: info@marinefood.com
+- Phone: +86 123 4567 8900
 

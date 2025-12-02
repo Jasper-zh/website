@@ -1,0 +1,32 @@
+name: Sync Products from Feishu
+
+on:
+  schedule:
+    # 每6小时自动同步一次（UTC 时间）
+    - cron: '0 */6 * * *'
+  workflow_dispatch:  # 允许手动触发
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+      
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18'
+      
+      - name: Sync from Feishu
+        run: |
+          node scripts/sync-feishu.js
+      
+      - name: Commit changes
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add data/products.yaml
+          git diff --staged --quiet || git commit -m "Auto sync products from Feishu [skip ci]"
+          git push
+

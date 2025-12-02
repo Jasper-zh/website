@@ -1,16 +1,16 @@
 baseURL = '/'
 languageCode = 'en-us'
-title = 'Shandong Ocean Village Food Co., Ltd.'
+title = 'Marine Food Products Co., Ltd.'
 theme = 'ocean-theme'
 
 [params]
-  companyName = "Shandong Ocean Village Food Co., Ltd."
-  companyNameCN = "海洋村"
+  companyName = "Marine Food Products Co., Ltd."
+  companyNameCN = "海产食品"
   tagline = "Premium Marine Food Products"
-  email = "salemanager@oceanvillagefood.com"
-  phone = "0086 631 7337809"
-  fax = "+86 631 7337809"
-  address = "No.982, South Dongshan Road, Dongshan District, RongCheng, Shandong, China"
+  email = "info@marinefood.com"
+  phone = "+86 123 4567 8900"
+  fax = "+86 123 4567 8901"
+  address = "123 Marine Street, Coastal District, City, Province, China"
 
 [menu]
   [[menu.main]]

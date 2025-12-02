@@ -10,13 +10,13 @@ THANK YOU FOR YOUR VISITING. JUST LEAVE MESSAGE ABOUT WHAT YOU WANT TO KNOW, WE 
 
 ### CONTACT INFO
 
-**SHANDONG OCEAN VILLAGE FOOD COMPANY**
+**MARINE FOOD PRODUCTS CO., LTD.**
 
-**Office call:** 0086 631 7337809
+**Office call:** +86 123 4567 8900
 
-**Fax:** +86 631 7337809
+**Fax:** +86 123 4567 8901
 
-**Email:** salemanager@oceanvillagefood.com
+**Email:** info@marinefood.com
 
-**Address:** No.982, South Dongshan Road, Dongshan District, RongCheng, Shandong, China
+**Address:** 123 Marine Street, Coastal District, City, Province, China
 

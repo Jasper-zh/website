@@ -22,7 +22,11 @@
                 {{ range $category.products }}
                 <div class="product-card">
                     <div class="product-image">
+                        {{ if or (hasPrefix .image "http://") (hasPrefix .image "https://") }}
+                        <img src="{{ .image }}" alt="{{ .alt }}">
+                        {{ else }}
                         <img src="{{ .image | relURL }}" alt="{{ .alt }}">
+                        {{ end }}
                     </div>
                     <div class="product-details">
                         <h3>{{ .name }}</h3>
