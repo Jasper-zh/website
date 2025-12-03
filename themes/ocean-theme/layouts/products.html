@@ -18,19 +18,19 @@
         
         {{ range $index, $category := $products.categories }}
         <div id="{{ $category.id }}" class="products-category" {{ if ne $index 0 }}style="display: none;"{{ end }}>
-            <div class="products-grid">
+        <div class="products-grid">
                 {{ range $category.products }}
-                <div class="product-card">
-                    <div class="product-image">
+            <div class="product-card">
+                <div class="product-image">
                         {{ if or (hasPrefix .image "http://") (hasPrefix .image "https://") }}
                         <img src="{{ .image }}" alt="{{ .alt }}">
                         {{ else }}
                         <img src="{{ .image | relURL }}" alt="{{ .alt }}">
                         {{ end }}
-                    </div>
-                    <div class="product-details">
+                </div>
+                <div class="product-details">
                         <h3>{{ .name }}</h3>
-                        <div class="product-specs">
+                    <div class="product-specs">
                             {{ if .specs.rawMaterial }}
                             <p><strong>Raw material:</strong> {{ .specs.rawMaterial }}</p>
                             {{ end }}
